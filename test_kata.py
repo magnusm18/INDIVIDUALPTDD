@@ -13,8 +13,9 @@ def kata(number):
             sub_str = ""
         else:
             sub_str += i
+    sum_of_num += int(sub_str)
     return sum_of_num
 
 
 def test_kata():
-    assert kata("1000,2") == 6
+    assert kata("1000,2") == 1002
