@@ -1,4 +1,5 @@
 def kata(number):
+    sub_str = ""
     sum_of_num = 0
     if number == "":
         return 0
@@ -7,10 +8,15 @@ def kata(number):
         return int(number)
 
     for i in number:
+        sub_str += i
         if i == ',':
-            continue
+            sub_str = ""
         else:
-            sum_of_num += int(i)
+            if len(sub_str) > 1:
+                sum_of_num += int(sub_str)
+                sum_of_num -= int(i)
+            else:
+                sum_of_num += int(sub_str)
     return sum_of_num
 
 
