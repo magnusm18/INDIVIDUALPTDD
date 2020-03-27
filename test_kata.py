@@ -21,4 +21,4 @@ def kata(number):
 
 
 def test_kata():
-    assert kata("1\n2,3") == 6
+    assert kata("1000,2") == 6
