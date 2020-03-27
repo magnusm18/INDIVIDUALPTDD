@@ -15,4 +15,4 @@ def num(numstring):
                 sum_of_num += int(sub_str)
 
 
-print(num("1,22,3,4"))
+print(num("1000,2"))
