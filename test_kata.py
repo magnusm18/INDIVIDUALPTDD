@@ -6,4 +6,4 @@ def kata(number):
         return int(number)
 
 def test_kata():
-    assert kata("1") == 0
+    assert kata("1") == 1
