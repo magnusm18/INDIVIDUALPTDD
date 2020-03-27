@@ -9,8 +9,11 @@ def kata(number):
 
     for i in number:
         if i == ',' or i == "\n":
-            sum_of_num += int(sub_str)
-            sub_str = ""
+            if len(sub_str) >= 4:
+                sub_str = ""
+            else:
+                sum_of_num += int(sub_str)
+                sub_str = ""
         else:
             sub_str += i
     sum_of_num += int(sub_str)
@@ -18,4 +21,4 @@ def kata(number):
 
 
 def test_kata():
-    assert kata("1000,2") == 1002
+    assert kata("1000,2") == 2
