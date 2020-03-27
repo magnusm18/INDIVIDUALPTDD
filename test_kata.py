@@ -15,4 +15,4 @@ def kata(number):
 
 
 def test_kata():
-    assert kata("1,2") == 1
+    assert kata("1,2") == 3
